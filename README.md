@@ -15,7 +15,7 @@ $ docker-compose up -d
 
 DB 作成とマイグレーション（初回のみ）
 ```
-$ docker-compose run web rake db:create db:migrate
+$ docker-compose exec web rails db:create db:migrate
 ```
 
 localhost:3000 にアクセス
